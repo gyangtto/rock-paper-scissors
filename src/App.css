@@ -25,9 +25,11 @@ h1 {
 .WIN {
 	background-color: green;
 }
+
 .LOSE {
 	background-color: red;
 }
+
 .TIE {
 	background-color: gray;
 }
