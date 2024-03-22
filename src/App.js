@@ -69,13 +69,13 @@ function App() {
 			</div>
 			<div className="main">
 				<button onClick={() => play('scissors')}>
-					<img src="/img/scissors-user.png" />
+					<img src="/img/scissors-user.png" alt="scissors" />
 				</button>
 				<button onClick={() => play('rock')}>
-					<img src="/img/rock-user.png" />
+					<img src="/img/rock-user.png" alt="rock" />
 				</button>
 				<button onClick={() => play('paper')}>
-					<img src="/img/paper-user.png" />
+					<img src="/img/paper-user.png" alt="paper" />
 				</button>
 			</div>
 		</div>
