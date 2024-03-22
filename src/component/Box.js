@@ -12,8 +12,12 @@ const Box = (props) => {
 		<div className={`box ${result}`}>
 			<h1>{props.title}</h1>
 			<h2>{props.item && props.item.name}</h2>
-			<img className="item-img" src={props.item && props.item.img} />
-			<h2 className="judge">{props.result}</h2>
+			<img
+				className="item-img"
+				src={props.item && props.item.img}
+				alt={props.item && props.item.name}
+			/>
+			<h2 className="judge">{result}</h2>
 		</div>
 	)
 }

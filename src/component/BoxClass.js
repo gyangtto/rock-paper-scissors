@@ -7,16 +7,20 @@ class BoxClass extends Component {
 		// title 이 COMPUTER 이고 result 가 TIE 가 아니며 비어있지 않을 때
 		if (this.props.title === 'COMPUTER' && result !== 'TIE' && result !== '') {
 			// 결과를 반대로 설정
-			result = result === 'WIN' ? 'LOSE' : 'WIN'
+			result = result === 'WIN' ? 'LOSE' : result === 'LOSE' ? 'WIN' : 'TIE'
 		}
 
 		return (
 			<div className={`box ${result}`}>
 				<h1>{this.props.title}</h1> {/* title 표시 */}
 				<h2>{this.props.item && this.props.item.name}</h2> {/* item 의 이름 표시 */}
-				<img className="item-img" src={this.props.item && this.props.item.img} />{' '}
+				<img
+					className="item-img"
+					src={this.props.item && this.props.item.img}
+					alt={this.props.item && this.props.item.name}
+				/>{' '}
 				{/* item 이미지 표시 */}
-				<h2 className="judge">{this.props.result}</h2> {/* 결과 표시 */}
+				<h2 className="judge">{result}</h2> {/* 결과 표시 */}
 			</div>
 		)
 	}
