@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import BoxClass from './component/BoxClass.js'
+// import Box from './component/Box.js'
 
 // 선택 옵션 및 승패 판단을 위한 객체
 const choice = {
